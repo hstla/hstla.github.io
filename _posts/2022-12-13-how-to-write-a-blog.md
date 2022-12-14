@@ -4,7 +4,6 @@ categories:
 - blogging
 date: 2022-12-13 17:00
 toc: true
-layout: single
 sidebar sticky: true
 ---
 
