@@ -3,7 +3,7 @@ title: cropdoctor프로젝트를 하며 했던 고민
 categories:
 - project
 # layout: single
-date: 2023-02-08
+date: 2023-02-11
 toc: true
 toc_label: CATEGORY
 toc_sticky: true
