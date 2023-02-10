@@ -18,7 +18,7 @@ toc_sticky: true
 
 내가 맡은 api는 사용자가 올린 작물 사진을 ai에 입력 후 결과(결과사진, 병명)을 response하는 것이었다.
 
-<p align = "center">결과사진은 작물과 질병 위치를 잡아준다.<img src='/assets/images/posts/2023-02-11/1.png' width="500"/></p>
+<p align = "center"><img src='/assets/images/posts/2023-02-11/1.png' width="500"/></p>
 
 
 
