@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://hstla.github.io/sitemap.xml
