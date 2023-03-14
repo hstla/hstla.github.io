@@ -105,9 +105,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "름이"
+  name             : "황현성"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "생각하는 개발자"
   location         : "Republic of Korea"
   email            : 
   links:
