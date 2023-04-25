@@ -10,7 +10,7 @@ toc_sticky: true
 
 자바에서 객체를 정렬하기 위해 `Arrays.sort()`나 `Collections.sort()`를 사용한다. 
 
-하지만 정렬에 조건을 추가하고 싶을 때 `Comparable`과 `Comparator`  인터페이스를 사용해야 한다.
+만약 정렬에 조건을 추가하고 싶을 때 `Comparable`과 `Comparator`인터페이스를 사용해야 한다.
 
 ## Comparable
 
