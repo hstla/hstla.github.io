@@ -108,3 +108,10 @@ public static void main(String[] args) {
 그 후에 JVM Stack 영역에 p 변수가 생성되어 Heep 영역에 생성된 Person 객체를 참조한다.
 
 이후 p 변수를 통해 Person 객체에 접근하여 데이터를 수정할 수 있고 사용이 종료되면 Garbage Collection에 의해 삭제된다.
+
+
+
+
+**참조**
+
+ [<span style="color:blue">이정록 유튜브</span>](https://www.youtube.com/watch?v=AWXPnMDZ9I0&t=36s)
