@@ -13,7 +13,7 @@ tags: [java]
 
 
 
-<p align = "center"><img src='../../assets/images/posts/2023-05-15/1.png' width="500"/></p>
+<p align = "center"><img src='../../assets/images/posts/2023-05-15/1.png' width="600"/></p>
 
 
 1번 답변은 이해할 수 있는 내용이었다. 
@@ -21,7 +21,7 @@ tags: [java]
 new 키워드를 사용해서 Integer객체가 생성되고 Integer는 참조 타입이므로 Heep 영역에 저장된다. n변수는 stack에 저장되어 주소 0x1000을 가리키는 것이다.
 
 
-<p align = "center"><img src='../../assets/images/posts/2023-05-15/2.png' width="500"/></p>
+<p align = "center"><img src='../../assets/images/posts/2023-05-15/2.png' width="600"/></p>
 
 
 2번은 내가 생각했던 방식과 달랐다. 내 생각은 오토박싱이니까 Integer객체가 생성되고 10값을 박싱하여 1번과 같이 힙 메모리에 저장되는 줄 알았는데 chatGPT의 답변은 달랐다.
@@ -31,7 +31,7 @@ chatGPT가 맞는지도 모르고 잘 이해되지 않아 더블체크를 위해
 ## Integer.valueOf()
 
 
-<p align = "center"><img src='../../assets/images/posts/2023-05-15/3.png' width="400"/></p>
+<p align = "center"><img src='../../assets/images/posts/2023-05-15/3.png' width="500"/></p>
 
 
 valueOf 코드를 보니 GPT의 답변과 유사하다. i가 IntegerCache.low ~ IntegerCache.high 사이 값이라면 캐시에서 값을 가져오고, 아니면 Integer객체를 생성하여 1번방식으로 처리한다.
@@ -121,11 +121,11 @@ public static void main(String[] args) {
 }
 ```
 
-<p align = "center"><img src='../../assets/images/posts/2023-05-15/5.png' width="300"/></p>
+<p align = "center"><img src='../../assets/images/posts/2023-05-15/5.png' width="500"/></p>
 
 
 범위 내부 값인 10을 가르키는 num1, num2는 같은 객체를 참고하고, 
 
-범위 외부 값인 300을 가르키는 num3와 num4는 각각 다른 객체를 참고하는 것을 확인했다.
+범위 외부 값인 300을 가르키는 num3와 num4는 각각 다른 객체를 참고하는 것을 볼 수 있다.
 
 만약 Integer값을 비교하고 싶으면 == 대신 Integer.equals() 메서드를 사용하자!
