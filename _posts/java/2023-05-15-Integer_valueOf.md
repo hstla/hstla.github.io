@@ -127,3 +127,5 @@ public static void main(String[] args) {
 범위 내부 값인 10을 가르키는 num1, num2는 같은 객체를 참고하고, 
 
 범위 외부 값인 300을 가르키는 num3와 num4는 각각 다른 객체를 참고하는 것을 확인했다.
+
+만약 Integer값을 비교하고 싶으면 == 대신 Integer.equals() 메서드를 사용하자!
