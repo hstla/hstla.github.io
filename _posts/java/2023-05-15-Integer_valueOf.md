@@ -31,7 +31,7 @@ chatGPT가 맞는지도 모르고 잘 이해되지 않아 더블체크를 위해
 ## Integer.valueOf()
 
 
-<p align = "center"><img src='../../assets/images/posts/2023-05-15/3.png' width="500"/></p>
+<p align = "center"><img src='../../assets/images/posts/2023-05-15/3.png' width="600"/></p>
 
 
 valueOf 코드를 보니 GPT의 답변과 유사하다. i가 IntegerCache.low ~ IntegerCache.high 사이 값이라면 캐시에서 값을 가져오고, 아니면 Integer객체를 생성하여 1번방식으로 처리한다.
@@ -40,7 +40,7 @@ valueOf 코드를 보니 GPT의 답변과 유사하다. i가 IntegerCache.low ~ 
 
 참고로 @Deprecated 어노테이션은 해당 메서드의 사용을 권장하지 않는다는 의미로 `since=”9”` 는 버전을 의미한다. 즉 JDK9버전이후로는 Integer생성자는 권장하지않는다는 의미 (Integer.valueOf(int) 사용!)
 
-<p align = "center"><img src='../../assets/images/posts/2023-05-15/4.png' width="500"/></p>
+<p align = "center"><img src='../../assets/images/posts/2023-05-15/4.png' width="600"/></p>
 
 
 하지만 아직  IntegerCache.low, high와 cache배열의 값을 몰라 정확한 동작을 확인할 수 없었다. 결국 IntegerCache 클래스를 찾아보았다.
