@@ -47,7 +47,7 @@ valueOf 코드를 보니 GPT의 답변과 유사하다. i가 IntegerCache.low ~ 
 
 ### IntegerCache
 
-클래스가 너무 길어 복사했다..
+클래스가 너무 길어 복사했다..ㅇㅇ
 
 ```cpp
 private static class IntegerCache {
