@@ -48,7 +48,6 @@ public class postController{
 **@RequiredArgsConstructor** 애노테이션의 동작을 확인하기 위해 postController.class파일 찾아보자.
 
 > 확장자가 .class인 파일들은 자바 컴파일러가 .java파일을 읽고 컴파일하여 java bytecode로 작성된 파일이다.
-
 >JVM이 읽을 수 있는 java bytecode로 작성되는 과정을 거치기 때문에 자바코드는 OS에 상관없이 독립적으로 실행되는 환경을 가진다.
 >.class파일을 확인하면 몇몇 애노테이션의 동작을 확인할 수 있다.
  
@@ -138,14 +137,16 @@ public class postController {
     }
 
     @PostMapping("/edit/{id}")
-    public String editPost(@PathVariable Long id, @Validated @ModelAttribute("post") PostUpdateForm form, BindingResult bindingResult) {
+    public String editPost(@PathVariable Long id, @Validated @ModelAttribute("post") PostUpdateForm form,
+                           BindingResult bindingResult, RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
             log.info("errors={}", bindingResult);
             return "posts/editPost";
         }
         Post post = new Post(form.getWriter(), form.getTitle(), form.getContent());
         mapPostRepository.update(id, post);
-        return "posts/post";
+        redirectAttributes.addAttribute("id", id);
+        return "redirect:/posts/{id}";
     }
 
     @GetMapping("/delete/{id}")
@@ -158,7 +159,17 @@ public class postController {
 
 `@GetMapping` 애노테이션을 쓰는 메서드는 크게 다른 점이 없다. postController에서는 모든 경로를 경로 변수로 받을 수 있게 설계하여 `@PathVariable` 애노테이션을 사용하여 받아 Repository의 메서드를 사용하여 처리한다.
 
-`@PostMapping` 를 사용한 메서드는 검증에 필요한 `@Validated`와 `BindingResult` 를 추가했고, html form으로 들어오는 post값을 받기 위해 `@ModelAttribute` 애노테이션을 사용했다.
+`@PostMapping` 를 사용한 메서드는 검증에 필요한 `@Validated`와 `BindingResult` 를 추가했고, html form으로 들어오는 post값을 받기 위해 `@ModelAttribute` 애노테이션을 사용한다.
+
+또한 사용자가 새로고침하여 중복요청되는 것을 방지하기 위해 값이 바뀌는 요청을 사용할 때는 redirect되도록 만들었다.
+
+redircet 경로에 경로변수를 넣고 싶으면 밑의 코드처럼 `RedirectAttributes` 클래스를 사용하여 변수 속성을 추가하면 된다.
+
+```java
+redirectAttributes.addAttribute("id", id);
+return "redirect:/posts/{id}";
+```
+
 
 addPost와 editPost 메서드의 `@ModelAttribute`를 보면 받는 form을 다르게 만들었다.
 
