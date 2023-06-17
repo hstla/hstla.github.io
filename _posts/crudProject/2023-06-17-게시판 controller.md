@@ -45,12 +45,13 @@ public class postController{
 
 **@RequiredArgsConstructor**: final선언한 인스턴스를 생성자 주입으로 의존성 주입을 해주는 애노테이션
 
-위의 3개의 애노테이션은 이해했는데 마지막 **@RequiredArgsConstructor** 애노테이션은 잘 이해가되지 않아 동작을 확인하기 위해 postController.class파일 찾아보았다.
+**@RequiredArgsConstructor** 애노테이션의 동작을 확인하기 위해 postController.class파일 찾아보자.
 
-> postController.class 파일같이 확장자가 .class인 파일들은 자바 컴파일러가 .java파일을 읽고 컴파일하여 java bytecode로 작성된 파일이다.
-JVM이 읽을 수 있는 java bytecode로 작성되는 과정을 거치기 때문에 자바코드는 OS에 상관없이 독립적으로 실행되는 환경을 가진다.
-.class파일을 확인하면 몇몇 애노테이션의 동작을 확인할 수 있다.
-> 
+> 확장자가 .class인 파일들은 자바 컴파일러가 .java파일을 읽고 컴파일하여 java bytecode로 작성된 파일이다.
+
+>JVM이 읽을 수 있는 java bytecode로 작성되는 과정을 거치기 때문에 자바코드는 OS에 상관없이 독립적으로 실행되는 환경을 가진다.
+>.class파일을 확인하면 몇몇 애노테이션의 동작을 확인할 수 있다.
+ 
 
 ### postController.class
 
