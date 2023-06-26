@@ -27,7 +27,7 @@ public class Person implements Comparable<Person> {
         this.name = name;
         this.age = age;
     }
-		@Overriede
+	@Overriede
     public int compareTo(Person other) {
         return this.age - other.age;  // 나이로 오름차순
     }
@@ -91,7 +91,7 @@ public class Person {
         people.add(new Person("C", 20));
         Comparator<Person> comparator = new Comparator<Person>() {
            public int compare(Person p1, Person p2) {
-					    return p1.getAge() - p2.getAge();
+		        return p1.getAge() - p2.getAge();
 }
         };
 				Collections.sort(people, comparator);
