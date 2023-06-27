@@ -1,5 +1,5 @@
 ---
-title: "게시판 로그인 기능 - repository"
+title: "게시판 로그인 기능2 - repository"
 categories:
 - "board project"
 date: 2023-06-23
