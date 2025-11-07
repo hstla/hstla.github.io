@@ -1,0 +1,22 @@
+포스트 생성 
+md 파일명은 0000-00-00-hello-world.md 이다.
+heelo world 부분이 url이 되고, 밑에 title이 제목이 된다.
+
+---
+title: 블로그 새로운 시작
+date: 2025-11-04 18:10:00 +0900
+discription: 블로그 첫글 입니다.
+categories: [낙서장]
+tags: []
+---
+
+discription: 제목 밑에 설명글로, 포스트 밖에서도 보인다.
+categories: 티스토리 옆에 대분류라고 생각하면 된다. 지금 생각나는건, 낙서장, 네트워크, 백엔드, 프론트엔드, 등등? 태그에 따라서 달라질 것같다.
+tags: 소분류라고 생각하면 된다. spring boot, redis, react 등등 공부한 기술들로 하면 될것 같다.
+
+# 서버 시작
+bundle exec jekyll serve
+
+
+# 이미지 추가하기
+![network.png](../assets/img/network/network.png)
