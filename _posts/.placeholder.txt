@@ -1,3 +1,10 @@
+공식 예시 페이지
+https://chirpy.cotes.page/
+
+공식 포스트 작성 에시
+https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md?plain=1
+
+
 포스트 생성 
 md 파일명은 0000-00-00-hello-world.md 이다.
 heelo world 부분이 url이 되고, 밑에 title이 제목이 된다.
@@ -8,6 +15,7 @@ date: 2025-11-04 18:10:00 +0900
 discription: 블로그 첫글 입니다.
 categories: [낙서장]
 tags: []
+math: true
 ---
 
 discription: 제목 밑에 설명글로, 포스트 밖에서도 보인다.
@@ -20,3 +28,15 @@ bundle exec jekyll serve
 
 # 이미지 추가하기
 ![network.png](../assets/img/network/network.png)
+
+
+# 동영상 추가하기
+<div style="text-align: center;">
+  <video autoplay loop muted playsinline width="400">
+    <source src="/assets/img/embedded/led/led_blink3.MOV" type="video/mp4">
+  </video>
+</div>
+
+math는 공식작성할 때 사용하는 코드이다. MathJax 라이브러리를 사용한다. 문법은 LED_Blink 포스트 참고
+$ $ 또는 $$ $$ 로 감싼다.
+https://www.mathjax.org/ 
