@@ -40,3 +40,20 @@ bundle exec jekyll serve
 math는 공식작성할 때 사용하는 코드이다. MathJax 라이브러리를 사용한다. 문법은 LED_Blink 포스트 참고
 $ $ 또는 $$ $$ 로 감싼다.
 https://www.mathjax.org/ 
+
+## Prompts
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+> An example showing the `tip` type prompt.
+{: .prompt-tip }
+
+> An example showing the `info` type prompt.
+{: .prompt-info }
+
+> An example showing the `warning` type prompt.
+{: .prompt-warning }
+
+> An example showing the `danger` type prompt.
+{: .prompt-danger }
+<!-- markdownlint-restore -->
