@@ -3,7 +3,6 @@ title: "인터럽트와 폴링의 차이 알아보기(NUCLEO‑F411RE)"
 date: 2025-12-24 20:00:00 +0900
 categories: [임베디드, STM32]
 tags: [인터럽트, 폴링]
-# pin: true
 math: true
 mermaid: true
 ---
