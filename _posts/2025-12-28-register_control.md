@@ -2,7 +2,7 @@
 title: "레지스터 직접 제어해보기(NUCLEO‑F411RE)"
 date: 2025-12-28 20:00:00 +0900
 categories: [임베디드, STM32]
-tags: [HAL, LL, register]
+tags: [HAL, register]
 math: true
 mermaid: true
 ---
