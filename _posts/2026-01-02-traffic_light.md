@@ -293,6 +293,13 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     }
 }
 ```
+### 실행 결과
+
+<div style="text-align: center;">
+  <video autoplay loop muted playsinline width="400">
+    <source src="/assets/img/embedded/led/traffic_light.MOV" type="video/mp4">
+  </video>
+</div>
 
 ## 마무리
 지금까지 배웠던 인터럽트, 폴링, GPIO 제어를 모두 활용해서 신호등 모드를 구현해 보았다. 간단한 예제지만, 모드를 enum으로 분리하고 상태머신 형태로 정리하면서 “임베디드에서 로직을 구조적으로 짜는 법”을 한 번 맛볼 수 있었다. 특히 버튼은 인터럽트로, 신호 전환은 타이머 기반 폴링으로 나누어 처리해 보니, 이전에 사용하던 Java 상태머신과도 비슷한 점이 있어 더 재미있게 느껴졌다. 다음에는 이번 패턴을 그대로 확장해서 7세그먼트나 모터를 붙인 RC 카 프로젝트로 이어가 볼 예정이다.
