@@ -45,12 +45,6 @@ USART는 UART 비동기 기능에 동기식 기능이 추가된 상위 호환 �
 
 ![usart stop bit](/assets/img/embedded/protocol/usart_stop_bit.png)
 
-
-## I2C(Inter-integrated circuit)
-I2C는 2선식 반이중 직렬 통신 방식으로, 데이터 라인 SDA와 클럭 라인 SCL 두 개의 신호선을 사용한다.  
-I2C 인터페이스는 동작 역할에 따라 Target Transmitter, Target Receiver, Controller Transmitter, Controller Receiver의 네 가지 모드로 동작하며, 반이중 특성상 한 순간에는 송신 또는 수신 중 한 방향으로만 통신이 가능하다. 또한 USART처럼 점대점(pin‑to‑pin) 연결이 아니라 Master–Slave(Controller–Target) 구조의 버스형 인터페이스이기 때문에, 하나의 I2C 마스터가 동일한 SDA/SCL 버스를 공유하는 여러 슬레이브 장치를 주소를 통해 개별적으로 제어할 수 있다.
-
-
 ## I2C(Inter-Integrated Circuit)  
 I2C는 2선식 반이중 직렬 통신 방식으로, 데이터 라인 SDA와 클럭 라인 SCL 두 개의 신호선을 사용한다.  
 두 라인은 풀업 저항을 통해 High로 유지되고, 모든 디바이스가 오픈드레인(또는 오픈콜렉터) 방식으로 Low를 끌어내리는 버스 구조를 가진다.  
@@ -77,6 +71,7 @@ SPI는 보통 하나의 마스터가 여러 슬레이브의 NSS를 각각 제어
 ![usart stop bit](/assets/img/embedded/protocol/spi.png)
 
 ## 언제 사용할까?
+
 | 프로토콜 | 특징 | 적합한 용도 예시 |
 |---------|------|------------------|
 | UART/USART | 간단한 점대점 직렬 통신, 비교적 낮은 속도, 텍스트/디버그 출력에 적합 | PC 터미널 로그, BLE 모듈, GPS 모듈, 디버깅 출력 |
